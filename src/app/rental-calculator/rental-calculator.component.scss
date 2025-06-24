@@ -1,0 +1,139 @@
+.calculator-container {
+  max-width: 600px;
+  margin: 30px auto;
+  // padding: 24px;
+  // border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(2, 2, 2, 2);
+  background-color: #ffffff;
+  direction: rtl;
+  font-family: system-ui;
+}
+
+.smaillTitle {
+  text-align: center;
+  font-size: 12px;
+  margin-bottom: 11px;
+  color: #d12eed;
+}
+
+.title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 24px;
+  color: #d12eed;
+  margin-top: 10px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.input-group label {
+  font-weight: 600;
+  margin-top: 8px;
+  margin-right: 5px;
+  align-self: center;
+}
+
+.input-group input {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  align-self: center;
+  width: 200px;
+  text-align: center;
+}
+
+.mr {
+  margin-right: 5px;
+  text-align: center;
+}
+
+.calculate-btn {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #20d696;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  width: 150px;
+  align-self: center;
+}
+
+.calculate-btn:hover {
+  background-color: #37dbdb;
+}
+
+.results {
+  margin-top: 10px;
+}
+
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.styled-table th,
+.styled-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+.styled-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.styled-table tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateX(0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.travel-message {
+  font-family: 'Rubik Marker Hatch', cursive;
+  font-size: 36px;
+  color: #d12eed;
+  animation: fadeInUp 1s ease-in-out;
+  text-align: center;
+  margin-top: -10px;
+}
+
+
+@keyframes markerWipe {
+  0% {
+    background-position: 100% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.marker-highlight {
+  background: linear-gradient(90deg, #20d696 0%, #20d696 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: 100% 0;
+  animation: markerWipe 0.8s ease-out forwards;
+}

@@ -1,0 +1,41 @@
+<!-- rental-calculator.component.html -->
+<div class="calculator-container">
+    <h6 class="smaillTitle">בס"ד</h6>
+    <h6 class="title">מחשבון השכרת רכב</h6>
+
+    <div class="input-group">
+        <label for="kilometers">מספר ק"מ:</label>
+        <input type="number" [(ngModel)]="kilometers" id="kilometers" />
+
+        <label for="hours">מספר שעות:</label>
+        <input type="number" [(ngModel)]="hours" id="hours" />
+
+        <button class="calculate-btn" (click)="calculate()">חשב</button>
+    </div>
+
+    <div class="results" *ngIf="result.length">
+        <h3 class="mr">תוצאות:</h3>
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>חברה</th>
+                    <th>דגם</th>
+                    <th>סוג השכרה</th>
+                    <th>מחיר כולל (₪)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let car of result; let i = index" [class.marker-highlight]="i === 0">
+                    <td>{{ car.company }}</td>
+                    <td>{{ car.name }}</td>
+                    <td>{{ car.type }}</td>
+                    <td>{{ car.cost.toFixed(1) }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div *ngIf="showGreeting" class="travel-message">
+    :)נסיעה טובה
+</div>
