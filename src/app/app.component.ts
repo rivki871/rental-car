@@ -9,5 +9,5 @@ import { RentalCalculatorComponent } from "./rental-calculator/rental-calculator
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'rental-app';
+  title = 'car-rental';
 }

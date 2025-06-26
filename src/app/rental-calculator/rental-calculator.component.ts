@@ -34,8 +34,8 @@ export class RentalCalculatorComponent {
   cars: Car[] = [
     { company: 'סיטי קאר', name: 'חשמלי', hourlyRate: 21, hourlykmRate: 0.8, dailyRate: 199, dailykmRate: 0.65 },
     { company: 'סיטי קאר', name: 'מיקרה', hourlyRate: 12.2, hourlykmRate: 2.3, dailyRate: 99, dailykmRate: 1 },
-    { company: 'מיי קאר', name: 'חשמלי', hourlyRate: 15.9, hourlykmRate: 0.9 },
-    { company: 'מיי קאר', name: 'פיקנטו', hourlyRate: 12.9, hourlykmRate: 1.5 },
+    { company: 'מיי קאר', name: 'חשמלי', hourlyRate: 15.9, hourlykmRate: 0.9 , dailyRate: 255, dailykmRate: 0.6},
+    { company: 'מיי קאר', name: 'פיקנטו', hourlyRate: 12.9, hourlykmRate: 1.5 , dailyRate: 139, dailykmRate: 1},
   ];
 
   calculate() {

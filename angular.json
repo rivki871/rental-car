@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "rental-app": {
+    "car-rental": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/rental-app",
+            "outputPath": "dist/car-rental",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "rental-app:build:production"
+              "buildTarget": "car-rental:build:production"
             },
             "development": {
-              "buildTarget": "rental-app:build:development"
+              "buildTarget": "car-rental:build:development"
             }
           },
           "defaultConfiguration": "development"
